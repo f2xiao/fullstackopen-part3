@@ -14,7 +14,9 @@ const requestLogger = (request, response, next) => {
 
 // cors middleware
 app.use(cors());
-// json-parser middleware
+// middleware for static content
+app.use(express.static("dist"));
+// json-parser middleware to parse request.body
 app.use(express.json());
 // requestLogger middleware
 app.use(requestLogger);
