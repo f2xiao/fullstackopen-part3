@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
 const { v4: uuidv4 } = require("uuid");
@@ -11,6 +12,8 @@ const requestLogger = (request, response, next) => {
   next();
 };
 
+// cors middleware
+app.use(cors());
 // json-parser middleware
 app.use(express.json());
 // requestLogger middleware
