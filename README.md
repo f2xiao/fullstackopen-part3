@@ -1,2 +1,2 @@
-# fullstackopen-part3
-backend with express
+# fullstackopen-lectureparts
+lecture parts of the fullstackopen course
