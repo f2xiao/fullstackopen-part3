@@ -86,6 +86,6 @@ app.delete("/api/notes/:id", (request, response) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`the sever starts on port ${PORT} `);
 });
